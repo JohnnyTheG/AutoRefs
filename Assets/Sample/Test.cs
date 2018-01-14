@@ -19,7 +19,7 @@ public class Test : MonoBehaviour
 	// list of references to components on the same game object.
 	[AutoRef]
 	[SerializeField]
-	List<TestRef> lstTestRef;
+	List<TestRefAlternate> lstTestRefAlternative;
 
 	// This is an example of an AutoRef being applied to an
 	// incompatible data type.

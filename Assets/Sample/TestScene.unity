@@ -292,9 +292,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f7475006f022140afc9132821307cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TestRef: {fileID: 0}
-  m_TestRefArray: []
-  m_TestRefAlternativeList: []
+  m_TestAutoRef: {fileID: 0}
+  m_NotAnAutoRef: {fileID: 0}
+  m_TestAutoRefArray: []
+  m_TestAutoRefAlternateList: []
   m_Rigidbody: {fileID: 0}
   m_Transform: {fileID: 0}
   m_Colliders: []

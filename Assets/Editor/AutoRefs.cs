@@ -8,7 +8,7 @@ using UnityEditor.Callbacks;
 
 public class AutoRefs : Editor
 {
-	[MenuItem("AutoRefs/GetAutoRefs")]
+	[MenuItem("AutoRefs/Set AutoRefs")]
 	static void GetAutoRefs()
 	{
 		// Get all game objects.

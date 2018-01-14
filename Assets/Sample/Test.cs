@@ -7,24 +7,27 @@ public class Test : MonoBehaviour
 	// instance of a class which exists on the same game object.
 	[AutoRef]
 	[SerializeField]
-	TestRef m_TestRef;
+	TestRef m_TestAutoRef;
+
+	[SerializeField]
+	TestRef m_NotAnAutoRef;
 
 	// This is an example of an AutoRef being applied to an
 	// array of references to components on the same game object.
 	[AutoRef]
 	[SerializeField]
-	TestRef[] m_TestRefArray;
+	TestRef[] m_TestAutoRefArray;
 
 	// This is an example of an AutoRef being applied to an
 	// list of references to components on the same game object.
 	[AutoRef]
 	[SerializeField]
-	List<TestRefAlternate> m_TestRefAlternativeList;
+	List<TestRefAlternate> m_TestAutoRefAlternateList;
 
 	// This is an example of an AutoRef being applied to an
 	// incompatible data type.
-	[AutoRef]
-	int m_BadTestRefInt;
+	//[AutoRef]
+	//int m_BadTestRefInt;
 
 	// Example of AutoRef being used with a Unity built in component type.
 	[AutoRef]

@@ -292,19 +292,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f7475006f022140afc9132821307cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TestRef: {fileID: 1939101383}
-  m_TestRefArray:
-  - {fileID: 1939101383}
-  - {fileID: 1939101385}
-  - {fileID: 1939101384}
-  m_TestRefAlternativeList:
-  - {fileID: 1939101386}
-  - {fileID: 1939101388}
-  m_Rigidbody: {fileID: 1939101387}
-  m_Transform: {fileID: 1939101382}
-  m_Colliders:
-  - {fileID: 1939101390}
-  - {fileID: 1939101389}
+  m_TestRef: {fileID: 0}
+  m_TestRefArray: []
+  m_TestRefAlternativeList: []
+  m_Rigidbody: {fileID: 0}
+  m_Transform: {fileID: 0}
+  m_Colliders: []
 --- !u!4 &1939101382
 Transform:
   m_ObjectHideFlags: 0

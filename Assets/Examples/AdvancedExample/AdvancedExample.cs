@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class AdvancedExample : MonoBehaviour
 {
+	[AutoRef(AutoRefTargetType.Self)]
+	[SerializeField]
+	TestRef m_SelfTestRef;
+
 	[AutoRef(AutoRefTargetType.Parent)]
 	[SerializeField]
 	TestRef m_ParentTestRef;
@@ -27,4 +31,8 @@ public class AdvancedExample : MonoBehaviour
 	[AutoRef(AutoRefTargetType.Scene)]
 	[SerializeField]
 	TestRef[] m_SceneTestRefArray;
+
+	[AutoRef(AutoRefTargetType.Self | AutoRefTargetType.Parent | AutoRefTargetType.Children | AutoRefTargetType.Siblings)]
+	[SerializeField]
+	List<TestRef> m_SelfParentChildAndSiblingTestRefList;
 }

@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-public class Test : MonoBehaviour
+public class BasicExample : MonoBehaviour
 {
 	// This is an example of an AutoRef setting a reference to an
 	// instance of a class which exists on the same game object.
-	[AutoRef]
+	[AutoRef(AutoRefTargetType.Self)]
 	[SerializeField]
 	TestRef m_TestAutoRef;
 
@@ -14,13 +14,13 @@ public class Test : MonoBehaviour
 
 	// This is an example of an AutoRef being applied to an
 	// array of references to components on the same game object.
-	[AutoRef]
+	[AutoRef(AutoRefTargetType.Self)]
 	[SerializeField]
 	TestRef[] m_TestAutoRefArray;
 
 	// This is an example of an AutoRef being applied to an
 	// list of references to components on the same game object.
-	[AutoRef]
+	[AutoRef(AutoRefTargetType.Self)]
 	[SerializeField]
 	List<TestRefAlternate> m_TestAutoRefAlternateList;
 
@@ -30,18 +30,18 @@ public class Test : MonoBehaviour
 	//int m_BadTestRefInt;
 
 	// Example of AutoRef being used with a Unity built in component type.
-	[AutoRef]
+	[AutoRef(AutoRefTargetType.Self)]
 	[SerializeField]
 	Rigidbody m_Rigidbody;
 
 	// Example of AutoRef being used to get the transform of the GameObject.
 	// This is useful as it caches the Transform rather than .transform which gets it each time.
-	[AutoRef]
+	[AutoRef(AutoRefTargetType.Self)]
 	[SerializeField]
 	Transform m_Transform;
 
 	// Example of AutoRef being used to get all instances of a base class component.
-	[AutoRef]
+	[AutoRef(AutoRefTargetType.Self)]
 	[SerializeField]
 	List<Collider> m_Colliders;
 }

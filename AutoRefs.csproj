@@ -220,9 +220,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AutoRefsAttributes.cs" />
-    <Compile Include="Assets\Sample\Test.cs" />
-    <Compile Include="Assets\Sample\TestRef.cs" />
-    <Compile Include="Assets\Sample\TestRefAlternate.cs" />
+    <Compile Include="Assets\Examples\AdvancedExample\AdvancedExample.cs" />
+    <Compile Include="Assets\Examples\BasicExample\BasicExample.cs" />
+    <Compile Include="Assets\Examples\Shared\TestRef.cs" />
+    <Compile Include="Assets\Examples\Shared\TestRefAlternate.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

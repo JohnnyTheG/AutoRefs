@@ -1,7 +1,7 @@
 # AutoRefs
 Automatic component referencing for Unity.
 
-Simply annotate any reference in your Unity scripts with the [AutoRef] attribute and the search target you require and the reference will be automatically set either by selecting the "Set AutoRefs" option in the Unity inspector, pressing the play button in the editor or building the project. This makes using GetComponent<> at runtime obsolete as references can be set and saved before runtime.
+Simply annotate any reference in your Unity scripts with the [AutoRef] attribute and the target type where the references is expected to be found and the reference will be automatically set either by selecting the "Set AutoRefs" option in the Unity inspector, pressing the play button in the editor or building the project. This makes using GetComponent<> in your scripts obsolete as references can be set and saved before runtime.
 
 The example script below is used to get automatic references from the GameObject the script is attached to. It is possible to get references to any built in component or user scripted component easily and quickly.
 

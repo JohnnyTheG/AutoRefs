@@ -8,11 +8,14 @@ using UnityEditor.Callbacks;
 
 public class AutoRefs : Editor
 {
-	[MenuItem("AutoRefs/Set AutoRefs")]
+	[MenuItem("Tools/AutoRefs/Set AutoRefs")]
 	static void GetAutoRefs()
 	{
 		// Get all game objects.
 		GameObject[] acGameObjects = FindObjectsOfType<GameObject>();
+
+		Undo.SetCurrentGroupName("Undo AutoRefs");
+		int nUndoGroup = Undo.GetCurrentGroup();
 
 		for (int nGameObject = 0; nGameObject < acGameObjects.Length; nGameObject++)
 		{
@@ -20,6 +23,9 @@ public class AutoRefs : Editor
 
 			// Get all MonoBehaviours attached to the current GameObject.
 			MonoBehaviour[] acMonoBehaviours = cGameObject.GetComponents<MonoBehaviour>();
+
+			// Register the MonoBehaviours with the Undo system.
+			Undo.RecordObjects(acMonoBehaviours, "AutoRefs MonoBehaviours");
 
 			for (int nMonoBehaviour = 0; nMonoBehaviour < acMonoBehaviours.Length; nMonoBehaviour++)
 			{
@@ -162,6 +168,8 @@ public class AutoRefs : Editor
 				}
 			}
 		}
+
+		Undo.CollapseUndoOperations(nUndoGroup);
 	}
 
 	static void LogErrorAutoRefFailedToFindReference(Type cFieldType, MonoBehaviour cMonoBehaviour, FieldInfo cFieldInfo)

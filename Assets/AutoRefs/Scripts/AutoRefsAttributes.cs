@@ -15,6 +15,11 @@ public class AutoRefAttribute : Attribute
 {
 	public AutoRefTargetType m_eTargetType;
 
+	public AutoRefAttribute()
+	{
+		m_eTargetType = AutoRefTargetType.Self;
+	}
+
 	public AutoRefAttribute(AutoRefTargetType eSearchType)
 	{
 		m_eTargetType = eSearchType;

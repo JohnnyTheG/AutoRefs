@@ -74,4 +74,4 @@ The example above and further examples can be found in the "Examples" folder of 
 
 == Support ==
 
-If you require further support or find a bug please email assetstore@johnnygray.co.uk
+If you require further support or find a bug please email unity@johnnygray.co.uk
